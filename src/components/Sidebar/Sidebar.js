@@ -43,18 +43,6 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                 <div className="grid grid-rows-1 grid-flow-row gap-4">
                   <div
                     className={`flex place-content-center font-bold h-8 w-32 ${
-                      selectedCategory === "Experience"
-                        ? "text-blue-500 cursor-not-allowed"
-                        : "cursor-pointer hover:text-large"
-                    }`}
-                    onClick={() => handleSelect("Experience")}
-                    key="Experience"
-                  >
-                    Experience
-                  </div>
-
-                  <div
-                    className={`flex place-content-center font-bold h-8 w-32 ${
                       selectedCategory === "Education"
                         ? "text-blue-500 cursor-not-allowed"
                         : "cursor-pointer hover:text-large"
@@ -63,6 +51,17 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                     key="Education"
                   >
                     Education
+                  </div>
+                  <div
+                    className={`flex place-content-center font-bold h-8 w-32 ${
+                      selectedCategory === "Experience"
+                        ? "text-blue-500 cursor-not-allowed"
+                        : "cursor-pointer hover:text-large"
+                    }`}
+                    onClick={() => handleSelect("Experience")}
+                    key="Experience"
+                  >
+                    Experience
                   </div>
                   <div
                     className={`flex place-content-center font-bold h-8 w-32 ${

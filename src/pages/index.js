@@ -19,7 +19,7 @@ import Freelance from "@/components/Freelance/Freelance";
 import Contact from "@/components/Contact/Contact";
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState("Experience");
+  const [selectedCategory, setSelectedCategory] = useState("Education");
   return (
     <main className="flex flex-row w-screen h-screen">
       <Sidebar
@@ -37,8 +37,8 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col text-center">
-            {selectedCategory === "Experience" && <Experience />}
             {selectedCategory === "Education" && <Education />}
+            {selectedCategory === "Experience" && <Experience />}
             {selectedCategory === "Freelance" && <Freelance />}
             {selectedCategory == "Contact" && <Contact />}
             {selectedCategory === "SnakeGame" && (
