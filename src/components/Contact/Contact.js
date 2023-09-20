@@ -13,12 +13,7 @@ export default function Contact() {
               <HiMail />
             </td>
             <td>
-              <Link
-                href="mailto:labthe3rd@gmail.com"
-                className="text-primary-500"
-              >
-                E-Mail
-              </Link>
+              <Link href="mailto:labthe3rd@gmail.com">E-Mail</Link>
             </td>
           </tr>
           <tr>

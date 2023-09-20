@@ -77,7 +77,7 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                   </div>
                   <div
                     className={`flex place-content-center font-bold h-8 w-32 ${
-                      selectedCategory === "OpenSource"
+                      selectedCategory === "Contact"
                         ? "text-blue-500 cursor-not-allowed"
                         : "cursor-pointer hover:text-large"
                     }`}
