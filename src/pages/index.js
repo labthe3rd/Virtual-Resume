@@ -30,7 +30,7 @@ export default function Home() {
           property="og:description"
           content="This website was coded from scratch using NextJS and TailwindCSS."
         />
-        {/* <meta property="og:image" content="/path/to/your/thumbnail.jpg" /> */}
+        <meta property="og:image" content="/lb-logo-whitebackground.png" />
         <meta property="og:url" content="https://www.louisbersine.com" />
       </Head>
       <main className="flex flex-row w-screen h-screen">
