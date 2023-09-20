@@ -1,7 +1,7 @@
 export default function MichiganTech() {
   return (
-    <div className="w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
-      <h1 className="mt-4 font-bold text-3xl">
+    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
+      <h1 className="font-bold text-xl sm:text-3xl">
         Michigan Technological University
       </h1>
       <h2 className="font-semibold text-xl">
@@ -9,7 +9,7 @@ export default function MichiganTech() {
       </h2>
       <h3 className="italic">September 2012 - May 2015</h3>
       <h4 className="mt-16 text-2xl">Awards Earned</h4>
-      <h5 className="mt-2 text-3xl italic">Larry Kennedy Award</h5>
+      <h5 className="mt-2 text-2xl sm:text-3xl italic">Larry Kennedy Award</h5>
       <p className="mt-2">
         Award achieved through managing the senior design team in the EE
         department. Our project was the "Smart Bin" which was a system that

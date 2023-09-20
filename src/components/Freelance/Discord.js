@@ -1,10 +1,10 @@
 export default function Discord() {
   return (
-    <div className="w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
-      <h1 className="font-bold text-3xl">The Party Zone VR</h1>
+    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
+      <h1 className="font-bold text-xl sm:text-3xl">The Party Zone VR</h1>
       <h2 className="font-semibold text-xl">Owner/Lead Developer</h2>
       <h3 className="italic">June 2021 - Current</h3>
-      <p className="mt-4">
+      <p className="mt-10 sm:mt-4">
         I've been the creative force and community architect behind The Party
         Zone VR Discord, a pulsating hub where virtual reality and underground
         music collide. Inspired by the underground music events percolating

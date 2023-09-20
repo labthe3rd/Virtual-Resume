@@ -1,10 +1,10 @@
 export default function MarquipWardUnited() {
   return (
-    <div className="w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
-      <h1 className="font-bold text-3xl">MarquipWardUnited</h1>
+    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
+      <h1 className="font-bold text-xl sm:text-3xl">MarquipWardUnited</h1>
       <h2 className="font-semibold text-xl">R&D Associate Controls Engineer</h2>
       <h3 className="italic text-xl">September 2019 - September 2023</h3>
-      <p className="mt-4">
+      <p className="mt-10 sm:mt-4">
         During my tenure at MarquipWardUnited from May 2015 to December 2016, I
         emerged as a linchpin in engineering innovation, relentlessly pursuing
         optimization at every corner. I successfully reconfigured the Variable

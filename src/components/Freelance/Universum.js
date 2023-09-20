@@ -1,10 +1,10 @@
 export default function Universum() {
   return (
-    <div className="w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
-      <h1 className="font-bold text-3xl">Universum</h1>
+    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
+      <h1 className="font-bold text-xl sm:text-3xl">Universum</h1>
       <h2 className="font-semibold text-xl">Lead Developer</h2>
       <h3 className="italic">December 2022 - February 2023</h3>
-      <p>
+      <p className="mt-10 sm:mt-4">
         I served as the Lead Developer for Universum, collaborating closely with
         my client Havengers to construct something truly extraordinary—a virtual
         music venue for Universal Music Sweden. Imagine stepping into the

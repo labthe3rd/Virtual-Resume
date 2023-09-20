@@ -29,10 +29,10 @@ export default function Home() {
       <div className="relative h-full w-full">
         <div className="absolute inset-y-0 top-0 w-full h-full overflow-y-auto box-border border-neutral-400 border-large">
           <div className="border-neutral-500 border-large box-border border-double h-32 grid grid-cols-1 content-center">
-            <div className=" text-5xl  text-center">
+            <div className=" text-2xl sm:text-5xl  text-center">
               Louis Bersine's Website
             </div>
-            <div className="text-center italic">
+            <div className="text-xs sm:text-medium w-1/2 place-self-center sm:w-full text-center italic">
               This website was coded from scratch using NextJS and TailwindCSS
             </div>
           </div>
