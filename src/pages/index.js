@@ -32,7 +32,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="/public/lb-logo-whitebackground.png"
+          content="https://www.louisbersine.com/lb-logo-whitebackground.png"
         />
         <meta property="og:url" content="https://www.louisbersine.com" />
       </Head>
