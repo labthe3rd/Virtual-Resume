@@ -1,9 +1,20 @@
+import Image from "next/image";
+
 export default function MichiganTech() {
   return (
-    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
-      <h1 className="font-bold text-xl sm:text-3xl">
+    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-100 bg-opacity-30">
+      <div className="flex justify-center">
+        <Image
+          src="/MichiganTechLogo.png"
+          width={500}
+          height={500}
+          alt="Michigan Technological University"
+        />
+      </div>
+      {/* <h1 className="font-bold text-xl sm:text-3xl">
         Michigan Technological University
-      </h1>
+      </h1> */}
+
       <h2 className="font-semibold text-xl">
         Bachelors Of Science In Electrical Engineering
       </h2>

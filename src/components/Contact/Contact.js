@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { HiMail } from "react-icons/hi";
-import { FaLinkedin, FaDiscord } from "react-icons/fa6";
+import { FaLinkedin, FaDiscord, FaGithub } from "react-icons/fa6";
 
 export default function Contact() {
   return (
@@ -21,17 +21,31 @@ export default function Contact() {
               <FaLinkedin />
             </td>
             <td>
-              <Link href="https://www.linkedin.com/in/louis-bersine-iii/">
+              {/* <Link href="https://www.linkedin.com/in/louis-bersine-iii/">
                 LinkedIn
-              </Link>
+              </Link> */}
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/louis-bersine-iii/"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
             </td>
           </tr>
           <tr>
             <td>
-              <FaDiscord />
+              <FaGithub />
             </td>
             <td>
-              <Link href="https://discord.gg/y5T5sG7mPr">The Party Zone</Link>
+              {/* <Link href="https://github.com/labthe3rd">GitHub</Link> */}
+              <a
+                target="_blank"
+                href="https://github.com/labthe3rd"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
             </td>
           </tr>
         </tbody>
