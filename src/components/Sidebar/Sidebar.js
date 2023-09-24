@@ -5,7 +5,7 @@ import { menu } from "@nextui-org/react";
 
 export default function Sidebar({ setSelectedCategory, selectedCategory }) {
   const [clickCount, setClickCount] = useState(0);
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
 
   //Change content
   const handleSelect = (category) => {

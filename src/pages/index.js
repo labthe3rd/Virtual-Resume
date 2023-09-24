@@ -19,6 +19,7 @@ import Freelance from "@/components/Freelance/Freelance";
 import Contact from "@/components/Contact/Contact";
 import Head from "next/head";
 import Weather from "@/components/Weather/Weather";
+import Drawing from "@/components/Drawing/Drawing";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("Education");
@@ -49,7 +50,7 @@ export default function Home() {
                 Louis Bersine's Website
               </div>
               <div className="text-xs sm:text-medium w-1/2 place-self-center sm:w-full text-center italic">
-                This website was coded from scratch using NextJS and TailwindCSS
+                Source code for my website can be found on my github page
               </div>
             </div>
             <div className="flex flex-col text-center">
