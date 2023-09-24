@@ -29,7 +29,7 @@ export default function Home() {
         <meta property="og:title" content="Louis Bersine's Website" />
         <meta
           property="og:description"
-          content="This website was coded from scratch using NextJS and TailwindCSS."
+          content="Source code for my website can be found on my github page"
         />
         <meta
           property="og:image"
