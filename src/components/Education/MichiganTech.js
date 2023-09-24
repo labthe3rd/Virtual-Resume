@@ -6,9 +6,9 @@ export default function MichiganTech() {
       <div className="flex justify-center">
         <Image
           src="/MichiganTechLogo.png"
+          alt="Michigan Technological University"
           width={500}
           height={500}
-          alt="Michigan Technological University"
         />
       </div>
       {/* <h1 className="font-bold text-xl sm:text-3xl">

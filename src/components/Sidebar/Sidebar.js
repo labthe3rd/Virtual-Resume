@@ -96,6 +96,17 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                   >
                     Snake Game
                   </div>
+                  <div
+                    className={`flex place-content-center font-bold h-8 w-32 ${
+                      selectedCategory === "Weather"
+                        ? "text-blue-500 cursor-not-allowed"
+                        : "cursor-pointer hover:text-large"
+                    }`}
+                    onClick={() => handleSelect("Weather")}
+                    key="Weather"
+                  >
+                    Weather API
+                  </div>
                 </div>
               </div>
             </div>

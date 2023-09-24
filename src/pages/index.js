@@ -18,6 +18,7 @@ import Education from "@/components/Education/Education";
 import Freelance from "@/components/Freelance/Freelance";
 import Contact from "@/components/Contact/Contact";
 import Head from "next/head";
+import Weather from "@/components/Weather/Weather";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("Education");
@@ -61,6 +62,7 @@ export default function Home() {
                   <SnakeGame />
                 </div>
               )}
+              {selectedCategory == "Weather" && <Weather />}
             </div>
           </div>
         </div>
