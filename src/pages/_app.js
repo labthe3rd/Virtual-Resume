@@ -6,11 +6,13 @@ import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps }) {
   return (
-    <NextUIProvider>
-      <NextThemesProvider attribute="class" defaultTheme="dark">
-        <Component {...pageProps} />
-        <Analytics />
-      </NextThemesProvider>
-    </NextUIProvider>
+    <>
+      <NextUIProvider>
+        <NextThemesProvider attribute="class" defaultTheme="dark">
+          <Component {...pageProps} />
+        </NextThemesProvider>
+      </NextUIProvider>
+      <Analytics />
+    </>
   );
 }
