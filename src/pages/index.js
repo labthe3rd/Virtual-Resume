@@ -8,6 +8,10 @@ import Freelance from "@/components/Freelance/Freelance";
 import Contact from "@/components/Contact/Contact";
 import Head from "next/head";
 import Weather from "@/components/Weather/Weather";
+import { HiMail } from "react-icons/hi";
+import { FaLinkedin, FaDiscord, FaGithub } from "react-icons/fa6";
+import Link from "next/link";
+import { SiGumroad } from "react-icons/si";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("Education");
@@ -39,6 +43,32 @@ export default function Home() {
               </div>
               <div className="text-xs sm:text-medium w-1/2 place-self-center sm:w-full text-center italic">
                 Source code for my website can be found on my github page
+              </div>
+              <div className="flex gap-4 mt-2 place-content-center">
+                <a href="mailto:labthe3rd@gmail.com">
+                  <HiMail className="object-center text-2xl hover:text-primary-500" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/louis-bersine-iii/"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="object-center text-2xl hover:text-primary-500" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/labthe3rd"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="object-center text-2xl hover:text-primary-500" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://labthe3rd.gumroad.com/"
+                  rel="noopener noreferrer"
+                >
+                  <SiGumroad className="object-center text-2xl hover:text-primary-500" />
+                </a>
               </div>
             </div>
             <div className="flex flex-col text-center">

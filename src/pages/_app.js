@@ -8,11 +8,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <NextUIProvider>
-        <NextThemesProvider
-          attribute="class"
-          defaultTheme="dark"
-          forcedTheme="dark"
-        >
+        <NextThemesProvider>
           <Component {...pageProps} />
         </NextThemesProvider>
       </NextUIProvider>

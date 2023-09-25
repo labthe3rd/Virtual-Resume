@@ -132,7 +132,7 @@ export default function MessageForm() {
         <Textarea
           variant="faded"
           label="Message"
-          minRows="8"
+          minRows="4 md:8"
           maxRows="12"
           size="lg"
           labelPlacement="inside"
