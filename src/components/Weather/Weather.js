@@ -66,7 +66,7 @@ export default function Weather() {
       </Button>
 
       {isLoading && <div>Loading...</div>}
-      {isError && <div>Error getting weather.</div>}
+      {isError && <div>Error getting weather. Please try again.</div>}
 
       <div className="mt-10 bg-neutral-900 mb-12 w-1/6">
         {weatherData.name &&

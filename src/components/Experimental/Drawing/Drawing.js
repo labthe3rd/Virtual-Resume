@@ -1,5 +1,5 @@
 // /src/components/Drawing/Drawing.js
-import Canvas from "@/components/Drawing/Canvas";
+import Canvas from "@/components/Experimental/Drawing/Canvas";
 import React, { useEffect, useRef } from "react";
 
 export default function Drawing() {

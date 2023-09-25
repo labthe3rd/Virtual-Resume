@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { HiMail } from "react-icons/hi";
 import { FaLinkedin, FaDiscord, FaGithub } from "react-icons/fa6";
+import { Button } from "@nextui-org/react";
+import { useSendEmail } from "@/hooks/useSendEmail";
+import react, { useState } from "react";
+import MessageForm from "./MessageForm";
 
 export default function Contact() {
   return (
@@ -50,6 +54,9 @@ export default function Contact() {
           </tr>
         </tbody>
       </table>
+      <div className="mt-10 w-1/3 text-4xl border-large border-primary-500 box-border">
+        <MessageForm />
+      </div>
     </div>
   );
 }

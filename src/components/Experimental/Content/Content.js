@@ -1,6 +1,6 @@
 // /src/components/Content/Content.js
 
-import SnakeGame from "../SnakeGame/SnakeGame";
+import SnakeGame from "../../SnakeGame/SnakeGame";
 
 export default function Content({ selectedCategory }) {
   console.log("Selected category is: ", selectedCategory);
