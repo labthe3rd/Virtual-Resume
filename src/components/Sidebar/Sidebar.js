@@ -1,7 +1,6 @@
 // src/components/Sidebar/sidebar.js
 import { HiOutlineMenu } from "react-icons/hi";
 import React, { useState, useEffect, useRef } from "react";
-import { menu } from "@nextui-org/react";
 
 export default function Sidebar({ setSelectedCategory, selectedCategory }) {
   const [clickCount, setClickCount] = useState(0);
@@ -45,7 +44,7 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                     className={`flex place-content-center font-bold h-8 w-32 ${
                       selectedCategory === "Education"
                         ? "text-blue-500 cursor-not-allowed"
-                        : "cursor-pointer hover:text-large"
+                        : "cursor-pointer hover:text-blue-200"
                     }`}
                     onClick={() => handleSelect("Education")}
                     key="Education"
@@ -56,7 +55,7 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                     className={`flex place-content-center font-bold h-8 w-32 ${
                       selectedCategory === "Experience"
                         ? "text-blue-500 cursor-not-allowed"
-                        : "cursor-pointer hover:text-large"
+                        : "cursor-pointer hover:text-blue-200"
                     }`}
                     onClick={() => handleSelect("Experience")}
                     key="Experience"
@@ -67,7 +66,7 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                     className={`flex place-content-center font-bold h-8 w-32 ${
                       selectedCategory === "Freelance"
                         ? "text-blue-500 cursor-not-allowed"
-                        : "cursor-pointer hover:text-large"
+                        : "cursor-pointer hover:text-blue-200"
                     }`}
                     onClick={() => handleSelect("Freelance")}
                     key="Freelance"
@@ -78,7 +77,7 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                     className={`flex place-content-center font-bold h-8 w-32 ${
                       selectedCategory === "Contact"
                         ? "text-blue-500 cursor-not-allowed"
-                        : "cursor-pointer hover:text-large"
+                        : "cursor-pointer hover:text-blue-200"
                     }`}
                     onClick={() => handleSelect("Contact")}
                     key="Contact"
@@ -89,7 +88,7 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                     className={`flex place-content-center font-bold h-8 w-32 ${
                       selectedCategory === "SnakeGame"
                         ? "text-blue-500 cursor-not-allowed"
-                        : "cursor-pointer hover:text-large"
+                        : "cursor-pointer hover:text-blue-200"
                     }`}
                     onClick={() => handleSelect("SnakeGame")}
                     key="SnakeGame"
@@ -100,7 +99,7 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                     className={`flex place-content-center font-bold h-8 w-32 ${
                       selectedCategory === "Weather"
                         ? "text-blue-500 cursor-not-allowed"
-                        : "cursor-pointer hover:text-large"
+                        : "cursor-pointer hover:text-blue-200"
                     }`}
                     onClick={() => handleSelect("Weather")}
                     key="Weather"

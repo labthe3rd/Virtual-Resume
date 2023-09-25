@@ -1,25 +1,13 @@
 // /src/pages/index.js
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
-import Content from "@/components/Content/Content";
 import { useState } from "react";
 import Sidebar from "@/components/Sidebar/Sidebar";
-import Example1 from "@/components/Animation/Example1";
 import SnakeGame from "@/components/SnakeGame/SnakeGame";
-import Proficient from "@/components/Experience/Proficient";
-import AltronAutomation from "@/components/Experience/AltronAutomation";
-import RomanManufacturing from "@/components/Experience/RomanManufacturing";
-import MarquipWardUnited from "@/components/Experience/MarquipWardUnited";
-import Trio from "@/components/Experience/Trio";
 import Experience from "@/components/Experience/Experience";
 import Education from "@/components/Education/Education";
 import Freelance from "@/components/Freelance/Freelance";
 import Contact from "@/components/Contact/Contact";
 import Head from "next/head";
 import Weather from "@/components/Weather/Weather";
-import Drawing from "@/components/Drawing/Drawing";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("Education");
