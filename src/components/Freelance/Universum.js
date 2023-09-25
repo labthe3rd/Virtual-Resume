@@ -28,6 +28,22 @@ export default function Universum() {
         facilitator of dreams, and the conductor of a groundbreaking virtual
         symphony.
       </p>
+      <a
+        className="text-2xl text-primary"
+        target="_blank"
+        href="https://vrchat.com/home/world/wrld_136947c3-fe7a-4549-8098-2669352e6999"
+        rel="noopener noreferrer"
+      >
+        Check out Universum in VRChat!
+      </a>
+      <iframe
+        className="mt-4 md:mt-10 w-full aspect-video"
+        src="https://www.youtube.com/embed/HDZSoObx11o?si=nO6_gdNIMOBEnFN4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
   );
 }

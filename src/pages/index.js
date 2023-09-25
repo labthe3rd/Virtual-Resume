@@ -12,6 +12,7 @@ import { HiMail } from "react-icons/hi";
 import { FaLinkedin, FaDiscord, FaGithub } from "react-icons/fa6";
 import Link from "next/link";
 import { SiGumroad } from "react-icons/si";
+import Showcase from "@/components/Showcase/Showcase";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("Education");
@@ -75,6 +76,7 @@ export default function Home() {
               {selectedCategory === "Education" && <Education />}
               {selectedCategory === "Experience" && <Experience />}
               {selectedCategory === "Freelance" && <Freelance />}
+              {selectedCategory === "Showcase" && <Showcase />}
               {selectedCategory == "Contact" && <Contact />}
               {selectedCategory === "SnakeGame" && (
                 <div className="mt-8">

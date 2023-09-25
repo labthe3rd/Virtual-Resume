@@ -75,6 +75,17 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                   </div>
                   <div
                     className={`flex place-content-center font-bold h-8 w-32 ${
+                      selectedCategory === "Showcase"
+                        ? "text-blue-500 cursor-not-allowed"
+                        : "cursor-pointer hover:text-blue-200"
+                    }`}
+                    onClick={() => handleSelect("Showcase")}
+                    key="Showcase"
+                  >
+                    Showcase
+                  </div>
+                  <div
+                    className={`flex place-content-center font-bold h-8 w-32 ${
                       selectedCategory === "Contact"
                         ? "text-blue-500 cursor-not-allowed"
                         : "cursor-pointer hover:text-blue-200"

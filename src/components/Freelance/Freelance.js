@@ -1,3 +1,4 @@
+import Delirium from "./Delirium";
 import Discord from "./Discord";
 import Gumroad from "./Gumroad";
 import MetaPlazaVR from "./MetaPlazaVR";
@@ -9,6 +10,7 @@ export default function Freelance() {
       <div className="text-2xl sm:text-5xl">Freelance Projects</div>
       <MetaPlazaVR />
       <Universum />
+      <Delirium />
       <Discord />
     </div>
   );

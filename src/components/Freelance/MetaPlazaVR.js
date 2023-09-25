@@ -29,6 +29,14 @@ export default function MetaPlazaVR() {
         owner; I am a catalyst for community empowerment and a pioneer at the
         intersection of virtual reality and real-world opportunity.
       </p>
+      <iframe
+        className="mt-4 md:mt-10 w-full aspect-video"
+        src="https://www.youtube.com/embed/9vlD0eExXdY?si=lHvOKU9tKBffSvib"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
   );
 }
