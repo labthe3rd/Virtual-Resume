@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MichiganTech() {
   return (
-    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-100 bg-opacity-30">
+    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-100 bg-opacity-30 ">
       <div className="flex justify-center">
         <Image
           src="/MichiganTechLogo.png"

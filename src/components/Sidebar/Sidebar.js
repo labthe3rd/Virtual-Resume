@@ -19,7 +19,6 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
       firstUpdate.current = false;
       return;
     }
-    console.log("You clicked me ", clickCount, " times");
   });
 
   function OpenMenu(e) {
@@ -32,7 +31,7 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
       {menu ? (
         <>
           <div className="fixed h-full w-44 z-10">
-            <div className="absolute left-0 h-full w-40 box-border bg-neutral-800 border-large rounded-r-xl">
+            <div className="absolute left-0 h-full w-40 box-border bg-neutral-800 border-large rounded-r-xl shadow-lg shadow-default-500">
               <div className="flex flex-row place-content-end w-full">
                 <button onClick={OpenMenu}>
                   <HiOutlineMenu className="text-2xl" />
@@ -125,7 +124,7 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
       ) : (
         <>
           <div className="fixed h-full w-10 z-10">
-            <div className="absolute left-0 h-full w-10 box-border bg-neutral-800 border-large rounded-r-xl">
+            <div className="absolute left-0 h-full w-10 box-border bg-neutral-800 border-large rounded-r-xl shadow-lg shadow-default-500">
               <div className="flex flex-row place-content-center w-full">
                 <button onClick={OpenMenu}>
                   <HiOutlineMenu className="text-2xl" />

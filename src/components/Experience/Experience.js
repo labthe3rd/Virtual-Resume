@@ -6,7 +6,7 @@ import Trio from "./Trio";
 
 export default function Experience() {
   return (
-    <div className="grid justify-items-center mt-8 gap-4">
+    <div className="grid justify-items-center mt-8 gap-4 mb-8">
       <div className="text-2xl sm:text-5xl">Experience</div>
       <Proficient />
 

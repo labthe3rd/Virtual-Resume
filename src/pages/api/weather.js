@@ -14,17 +14,19 @@ const AbortController =
 const geoBaseUrl = "https://nominatim.openstreetmap.org/search?q=";
 const weatherBaseUrl = "https://api.weather.gov/points/";
 
+//Added delay to fix error of sending api requests to api.weather.gov to quickly after receiving response.
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 //Decode zipcode to longitude and latitude for weather api
 async function GetCoordinates(zipcode) {
   let coordinates = [];
   const fncUrl = "&format=json&polygon_kml=1&addressdetails=1";
   const reqUrl = geoBaseUrl + zipcode + fncUrl;
-
   // Add the abort controller logic inside the function
   const controller = new AbortController();
   const timeout = setTimeout(() => {
     controller.abort();
-  }, 150);
+  }, 1000);
 
   try {
     console.log("Attempting to fetch geolocation from: ", reqUrl);
@@ -34,13 +36,22 @@ async function GetCoordinates(zipcode) {
     const status = await response.status;
     const data = await response.json();
 
-    if (status === 200) {
-      console.log("Success fetching geolocation!");
-      coordinates.push(data[0].lat);
-      coordinates.push(data[0].lon);
-      return coordinates;
-    } else {
-      console.log("Geolocation api server returned error status ", status);
+    //Retry fetching geolocation on error
+    const attempts = 3;
+    const delayTime = 1000;
+    for (var i = 0; i <= attempts; i++) {
+      if (status === 200) {
+        console.log("Success fetching geolocation!");
+        coordinates.push(data[0].lat);
+        coordinates.push(data[0].lon);
+        return coordinates;
+      } else {
+        console.log("Geolocation api server returned error status ", status);
+        console.log(
+          `Retrieving geolocation failed on attempt ${i} Retrying in ${delayTime}ms`
+        );
+        await delay(delayTime);
+      }
     }
   } catch (error) {
     console.log(error);
@@ -72,11 +83,20 @@ async function GetForecastUrl(long, lat) {
     console.log(data);
     const forecastUrl = data.properties.forecast;
 
-    if (status === 200) {
-      console.log("Success fetching forecast url!");
-      return forecastUrl;
-    } else {
-      console.log("Forecast url api server returned error status ", status);
+    //Retry fetching forecast url on error
+    const attempts = 3;
+    const delayTime = 1000;
+    for (var i = 0; i <= attempts; i++) {
+      if (status === 200) {
+        console.log("Success fetching forecast url!");
+        return forecastUrl;
+      } else {
+        console.log("Forecast url api server returned error status ", status);
+        console.log(
+          `Retrieving forecast url failed at attempt ${i} Retrying in ${delayTime}ms`
+        );
+        await delay(delayTime);
+      }
     }
   } catch (error) {
     console.log(error);
@@ -104,12 +124,21 @@ async function GetForecast(reqUrl) {
     const status = await response.status;
     const data = await response.json();
 
-    if (status === 200) {
-      const forecast = data.properties.periods[0];
-      console.log("Success fetching forecast!");
-      return forecast;
-    } else {
-      console.log("Forecast url api server returned error status ", status);
+    //Attempt to get the forecast 3 times before returning the error
+    const attempts = 3;
+    const delayTime = 1000;
+    for (var i = 0; i <= attempts; i++) {
+      if (status === 200) {
+        const forecast = data.properties.periods[0];
+        console.log("Success fetching forecast!");
+        return forecast;
+      } else {
+        console.log("Forecast api server returned error status ", status);
+        console.log(
+          `Retrieving forecast failed at attempt ${i} Retrying in ${delayTime}ms`
+        );
+        await delay(delayTime);
+      }
     }
   } catch (error) {
     console.log("Error fetching forecast");
@@ -129,6 +158,7 @@ async function GetWeather(zipcode) {
     const longitude = coordinates[1];
     const forecastUrl = await GetForecastUrl(longitude, latitude);
     if (forecastUrl) {
+      await delay(150);
       const forecast = await GetForecast(forecastUrl);
       if (forecast) {
         const weather = {

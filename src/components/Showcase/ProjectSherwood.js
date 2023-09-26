@@ -1,6 +1,6 @@
 export default function ProjectSherwood() {
   return (
-    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
+    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-double p-4 bg-neutral-700 bg-opacity-30 shadow-md shadow-neutral-500 border-opacity-20">
       <h1 className="font-bold text-xl sm:text-3xl">Project Sherwood</h1>
       <p className="mt-10 sm:mt-4">
         Electric forest has always been one of the highlights of my year. Each
@@ -23,9 +23,8 @@ export default function ProjectSherwood() {
         className="mt-4 md:mt-10 w-full aspect-video"
         src="https://www.youtube.com/embed/qASfnW2UlfA?si=xLcyxMM78X5crUU-"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </div>
   );

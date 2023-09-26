@@ -38,14 +38,14 @@ export default function Home() {
         />
         <div className="relative h-full w-full">
           <div className="absolute inset-y-0 top-0 w-full h-full overflow-y-auto box-border border-neutral-400 border-large">
-            <div className="border-neutral-500 border-large box-border border-double h-32 grid grid-cols-1 content-center">
+            <div className="fixed border-neutral-500 border-large box-border border-double h-32 grid grid-cols-1 content-center w-full bg-black shadow-md shadow-neutral-500">
               <div className=" text-2xl sm:text-5xl  text-center">
                 Louis Bersine's Website
               </div>
               <div className="text-xs sm:text-medium w-1/2 place-self-center sm:w-full text-center italic">
                 Source code for my website can be found on my github page
               </div>
-              <div className="flex gap-4 mt-2 place-content-center">
+              <div className="flex gap-10 md:gap-4 mt-6 md:mt-2 place-content-center">
                 <a href="mailto:labthe3rd@gmail.com">
                   <HiMail className="object-center text-2xl hover:text-primary-500" />
                 </a>
@@ -72,7 +72,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col text-center">
+            <div className="flex flex-col text-center mt-32">
               {selectedCategory === "Education" && <Education />}
               {selectedCategory === "Experience" && <Experience />}
               {selectedCategory === "Freelance" && <Freelance />}

@@ -26,6 +26,7 @@ export default async function handler(req, res) {
             `,
       });
       console.log(data);
+      //Note that this library provides an id when successful and not a status
       if (data.id) {
         res.status(200).json({ status: "Success!" });
       } else {

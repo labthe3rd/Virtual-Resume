@@ -1,6 +1,6 @@
 export default function Proficient() {
   return (
-    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-dotted p-4 bg-neutral-700 bg-opacity-30">
+    <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-double p-4 bg-neutral-700 bg-opacity-30 shadow-md shadow-neutral-500 border-opacity-20">
       <h1 className="font-bold text-xl sm:text-3xl">
         Proficient Machine & Automation
       </h1>
