@@ -1,9 +1,11 @@
 // src/components/Sidebar/sidebar.js
 import { HiOutlineMenu } from "react-icons/hi";
 import React, { useState, useEffect, useRef } from "react";
+import useIsMobile from "@/hooks/useIsMobile";
 
 export default function Sidebar({ setSelectedCategory, selectedCategory }) {
   const [clickCount, setClickCount] = useState(0);
+  const isMobile = useIsMobile();
   const [menu, setMenu] = useState(true);
 
   //Change content
@@ -63,25 +65,25 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                   </div>
                   <div
                     className={`flex place-content-center font-bold h-8 w-32 ${
-                      selectedCategory === "Freelance"
+                      selectedCategory === "Projects"
                         ? "text-blue-500 cursor-not-allowed"
                         : "cursor-pointer hover:text-blue-200"
                     }`}
-                    onClick={() => handleSelect("Freelance")}
-                    key="Freelance"
+                    onClick={() => handleSelect("Projects")}
+                    key="Projects"
                   >
-                    Freelance
+                    Projects
                   </div>
                   <div
                     className={`flex place-content-center font-bold h-8 w-32 ${
-                      selectedCategory === "Showcase"
+                      selectedCategory === "Portfolio"
                         ? "text-blue-500 cursor-not-allowed"
                         : "cursor-pointer hover:text-blue-200"
                     }`}
-                    onClick={() => handleSelect("Showcase")}
-                    key="Showcase"
+                    onClick={() => handleSelect("Portfolio")}
+                    key="Portfolio"
                   >
-                    Showcase
+                    Portfolio
                   </div>
                   <div
                     className={`flex place-content-center font-bold h-8 w-32 ${
@@ -94,17 +96,19 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
                   >
                     Contact
                   </div>
-                  <div
-                    className={`flex place-content-center font-bold h-8 w-32 ${
-                      selectedCategory === "SnakeGame"
-                        ? "text-blue-500 cursor-not-allowed"
-                        : "cursor-pointer hover:text-blue-200"
-                    }`}
-                    onClick={() => handleSelect("SnakeGame")}
-                    key="SnakeGame"
-                  >
-                    Snake Game
-                  </div>
+                  {!isMobile && (
+                    <div
+                      className={`flex place-content-center font-bold h-8 w-32 ${
+                        selectedCategory === "SnakeGame"
+                          ? "text-blue-500 cursor-not-allowed"
+                          : "cursor-pointer hover:text-blue-200"
+                      }`}
+                      onClick={() => handleSelect("SnakeGame")}
+                      key="SnakeGame"
+                    >
+                      Snake Game
+                    </div>
+                  )}
                   <div
                     className={`flex place-content-center font-bold h-8 w-32 ${
                       selectedCategory === "Weather"

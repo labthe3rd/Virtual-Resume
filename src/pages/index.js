@@ -4,7 +4,7 @@ import Sidebar from "@/components/Sidebar/Sidebar";
 import SnakeGame from "@/components/SnakeGame/SnakeGame";
 import Experience from "@/components/Experience/Experience";
 import Education from "@/components/Education/Education";
-import Freelance from "@/components/Freelance/Freelance";
+import Projects from "@/components/Freelance/Projects";
 import Contact from "@/components/Contact/Contact";
 import Head from "next/head";
 import Weather from "@/components/Weather/Weather";
@@ -12,7 +12,7 @@ import { HiMail } from "react-icons/hi";
 import { FaLinkedin, FaDiscord, FaGithub } from "react-icons/fa6";
 import Link from "next/link";
 import { SiGumroad } from "react-icons/si";
-import Showcase from "@/components/Showcase/Showcase";
+import Portfolio from "@/components/Showcase/Portfolio";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("Education");
@@ -75,8 +75,8 @@ export default function Home() {
             <div className="flex flex-col text-center mt-32">
               {selectedCategory === "Education" && <Education />}
               {selectedCategory === "Experience" && <Experience />}
-              {selectedCategory === "Freelance" && <Freelance />}
-              {selectedCategory === "Showcase" && <Showcase />}
+              {selectedCategory === "Projects" && <Projects />}
+              {selectedCategory === "Portfolio" && <Portfolio />}
               {selectedCategory == "Contact" && <Contact />}
               {selectedCategory === "SnakeGame" && (
                 <div className="mt-8">

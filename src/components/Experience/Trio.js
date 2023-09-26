@@ -4,24 +4,34 @@ export default function Trio() {
       <h1 className="font-bold text-xl sm:text-3xl">Trio</h1>
       <h2 className="font-semibold text-xl">Math Tutor</h2>
       <h3 className="italic">September 2010 - September 2012</h3>
-      <p className="mt-10 sm:mt-4">
-        At Trio, my role as a Math Tutor was much more than a simple exercise in
-        arithmetic—it was an enlightening journey through the corridors of human
-        potential. Empowered by my mission to guide students to academic
-        success, I became more than just a tutor; I became an ally in their
-        personal and intellectual growth. As I engaged with students grappling
-        with mathematical challenges, the experience transformed not only their
-        understanding of numbers but also enriched my social skills. In a realm
-        often stigmatized as daunting and inaccessible, I found myself becoming
-        a patient, empathetic bridge-builder, connecting students to the beauty
-        and logic of mathematics. Along the way, I discovered that teaching
-        others required a creative agility that took me beyond the traditional
-        methodologies. I found myself thinking outside the box, customizing
-        strategies to unlock the unique strengths of each student. Thus, it
-        wasn't just about solving equations; it was about equipping individuals
-        with the confidence and skills to better their lives. In this deeply
-        rewarding role, I realized that the true algebra of tutoring lies in
-        balancing empathy with education, and patience with progress.
+      <p className="text-left mt-10 sm:mt-4">
+        <span className="text-xl">Responsibilities</span>
+        <ul className="list-disc list-inside text-left pl-4">
+          <li>
+            Guided students through mathematical concepts, fostering a deeper
+            understanding and ensuring their grasp of foundational principles
+            critical to engineering and programming logic.
+          </li>
+          <li>
+            Assisted students in breaking down intricate math problems,
+            mirroring the process of debugging and troubleshooting in
+            engineering and software development.
+          </li>
+          <li>
+            Tailored explanations to individual student needs, honing an ability
+            to communicate intricate ideas clearly and concisely — a crucial
+            skill when working in teams or explaining technical details to
+            non-technical stakeholders.
+          </li>
+          <li>
+            Adapted tutoring techniques based on individual student needs and
+            learning styles, showcasing flexibility and responsiveness.
+          </li>
+          <li>
+            Played a role in shaping the academic success of students,
+            demonstrating leadership, guidance, and mentorship skills.
+          </li>
+        </ul>
       </p>
     </div>
   );

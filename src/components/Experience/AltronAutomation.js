@@ -4,26 +4,26 @@ export default function AltronAutomation() {
       <h1 className="font-bold text-xl sm:text-3xl">Altron Automation</h1>
       <h2 className="font-semibold text-xl">Controls Engineer</h2>
       <h3 className="italic text-xl">December 2016 - August 2018</h3>
-      <p className="mt-10 sm:mt-4">
-        At Altron Automation, I wore multiple hats, each stitched with the
-        threads of ingenuity and customer focus, as I stepped into the role of a
-        Controls Engineer. I wasn't just designing electrical schematics for
-        custom machinery; I was crafting the intricate blueprints that breathed
-        life into complex, automated ecosystems. My contributions extended into
-        the digital sphere, where I helped curate an expansive AutoCAD
-        Electrical library, setting the gold standard for engineering
-        documentation within the company. Coding was another realm where I
-        thrived. As a maestro of PLC, HMI, and Robot code, I orchestrated a
-        seamless integration of disparate components, making the machine
-        processes sing in harmonious unison. But my role transcended the digital
-        and the theoretical. I was also the face of Altron in customer
-        environments, providing on-site support that was as technically rigorous
-        as it was consultative. Here, I acted as the vital conduit, connecting
-        the machinery we developed to our clients' existing systems and
-        Manufacturing Execution System (MES) infrastructures. Every wire I laid,
-        every line of code I wrote, and every customer interaction I
-        facilitated, were all notes in a larger composition—aimed at achieving
-        operational excellence and customer satisfaction.
+      <p className="text-left mt-10 sm:mt-4">
+        <span className="text-xl">Responsibilities</span>
+        <ul className="list-disc list-inside text-left pl-4">
+          <li>
+            Engineered software solutions for specialized machinery, including
+            PLCs, HMIs, Robotics, and additional devices
+          </li>
+          <li>
+            Teamed up with cross-functional departments to guarantee project
+            success and punctual delivery
+          </li>
+          <li>
+            Drafted Electrical blueprints for tailored machinery utilizing
+            AutoCAD Electrical
+          </li>
+          <li>
+            Engaged directly with clientele to ascertain and fulfill system
+            operational requirements
+          </li>
+        </ul>
       </p>
     </div>
   );
