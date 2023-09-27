@@ -4,7 +4,7 @@ import Sidebar from "@/components/Sidebar/Sidebar";
 import SnakeGame from "@/components/SnakeGame/SnakeGame";
 import Experience from "@/components/Experience/Experience";
 import Education from "@/components/Education/Education";
-import Projects from "@/components/Freelance/Projects";
+import Projects from "@/components/Projects/Projects";
 import Contact from "@/components/Contact/Contact";
 import Head from "next/head";
 import Weather from "@/components/Weather/Weather";
@@ -13,6 +13,12 @@ import { FaLinkedin, FaDiscord, FaGithub } from "react-icons/fa6";
 import Link from "next/link";
 import { SiGumroad } from "react-icons/si";
 import Portfolio from "@/components/Showcase/Portfolio";
+import { Open_Sans, Playfair_Display } from "next/font/google";
+
+const playfair_display = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("Education");
@@ -39,7 +45,9 @@ export default function Home() {
         <div className="relative h-full w-full">
           <div className="absolute inset-y-0 top-0 w-full h-full overflow-y-auto box-border border-neutral-400 border-large">
             <div className="fixed border-neutral-500 border-large box-border border-double h-32 grid grid-cols-1 content-center w-full bg-black shadow-md shadow-neutral-500">
-              <div className=" text-2xl sm:text-5xl  text-center">
+              <div
+                className={`${playfair_display.className} font-bold text-2xl lg:text-5xl  text-center`}
+              >
                 Louis Bersine's Website
               </div>
               <div className="text-xs sm:text-medium w-1/2 place-self-center sm:w-full text-center italic">

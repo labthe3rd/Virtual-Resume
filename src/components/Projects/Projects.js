@@ -4,7 +4,7 @@ export default function Projects() {
       <div className="text-2xl sm:text-5xl">Professional Projects</div>
       <div className="ml-8 w-11/12 sm:ml-0 sm:w-1/3 box-border border-large border-neutral-600 border-double p-4 bg-neutral-700 bg-opacity-30 shadow-md shadow-neutral-500 border-opacity-20">
         <p className="text-left mt-10 sm:mt-4">
-          <ul className="list-disc list-inside text-left pl-4">
+          <ul className="list-disc list-inside space-y-4 text-small text-left pl-4">
             <li>MES PC Systemization – 2015 – Associates Control Engineer</li>
             <li>
               MRC4 Rollstand Software Development – 2016 – Associates Controls
