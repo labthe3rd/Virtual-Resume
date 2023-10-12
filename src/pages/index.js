@@ -14,13 +14,24 @@ import Link from "next/link";
 import { SiGumroad } from "react-icons/si";
 import Portfolio from "@/components/Showcase/Portfolio";
 import { Open_Sans, Playfair_Display } from "next/font/google";
+import Blog from "@/components/Blog/Blog";
+import { getSortedPostsData } from "@/lib/posts";
 
 const playfair_display = Playfair_Display({
   subsets: ["latin"],
   display: "swap",
 });
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function Home({ allPostsData }) {
   const [selectedCategory, setSelectedCategory] = useState("Education");
   return (
     <div>
@@ -81,6 +92,9 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col text-center mt-32">
+              {selectedCategory === "Blog" && (
+                <Blog allPostsData={allPostsData} />
+              )}
               {selectedCategory === "Education" && <Education />}
               {selectedCategory === "Experience" && <Experience />}
               {selectedCategory === "Projects" && <Projects />}

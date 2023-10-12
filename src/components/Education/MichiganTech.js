@@ -24,7 +24,7 @@ export default function MichiganTech() {
       <p className="mt-2">
         Award achieved through managing the senior design team in the EE
         department. Our project was the "Smart Bin" which was a system that
-        would measure the wait of a large product reject bin and transmit the
+        would measure the weight of a large product reject bin and transmit the
         data to a PLC wirelessly. The project was created to detect areas of the
         assembly process that had the most issues and allow the engineering team
         to improve the product line.

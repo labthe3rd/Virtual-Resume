@@ -9,7 +9,7 @@ export default function MetaPlazaVR() {
           This service is not active to be respectful to VRChat's terms of
           service, but I've included it as a means to share my skills/abilities.
         </span>
-        The video shows a project I worked on that used VRChat's Udon Sharp,
+      The video shows a project I worked on that used VRChat's Udon Sharp,
         which is essentially C# in unity, to integrate with a backend server I
         created. I also created the font end. Communicaton was handled via APIs.
       </p>

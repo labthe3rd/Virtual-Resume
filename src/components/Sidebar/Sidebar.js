@@ -41,6 +41,18 @@ export default function Sidebar({ setSelectedCategory, selectedCategory }) {
               </div>
               <div className="flex flex-row place-content-center mt-4">
                 <div className="grid grid-rows-1 grid-flow-row gap-4">
+                  {/* Adding a blog in the future, leaving this here for now so I can update the site without experimental features effecting performance. */}
+                  {/* <div
+                    className={`flex place-content-center font-bold h-8 w-32 ${
+                      selectedCategory === "Blog"
+                        ? "text-blue-500 cursor-not-allowed"
+                        : "cursor-pointer hover:text-blue-200"
+                    }`}
+                    onClick={() => handleSelect("Blog")}
+                    key="Blog"
+                  >
+                    Blog
+                  </div> */}
                   <div
                     className={`flex place-content-center font-bold h-8 w-32 ${
                       selectedCategory === "Education"
